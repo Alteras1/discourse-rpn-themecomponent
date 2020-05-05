@@ -1,7 +1,8 @@
 /*
 Image Float...............BBCODE-001
 Border....................BBCODE-002
-Background................BBCODE-002
+Background................BBCODE-003
+Background................BBCODE-004
 */
 
 /*************************************************
@@ -18,7 +19,7 @@ Background................BBCODE-002
 
 
 /*************************************************
-*** Border                           BBCODE-022***
+*** Border                           BBCODE-002***
 *************************************************/
 .bbcode-border {
 	padding: 10px;
@@ -36,4 +37,31 @@ Background................BBCODE-002
 .bbcode-background {
 	padding: 10px;
 	color: black;
+}
+
+/*************************************************
+*** Fieldset                         BBCODE-004***
+*************************************************/
+
+.bbcode-fieldset {
+	width: 95%;
+	margin: 0 auto;
+	clear: both;
+	border: 1px solid #2980b9;
+	padding: 10px;
+}
+.bbcode-fieldset legend {
+	margin-left: 3%;
+	font-weight: 700;
+	color: #2980b9;
+	padding: 0 10px;
+}
+
+.bbcode-fieldset span {
+	color: #2980b9;
+}
+@media screen and (max-width: 800px) {
+	.bbcode-fieldset {
+		width: 90%;
+	}
 }

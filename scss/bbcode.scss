@@ -83,23 +83,11 @@ Side......................BBCODE-005
 	float: left;
 	margin: 1em 1em 1em 0;
 	clear: left;
-	clear: both;
-	width: 21%;
-	border-left: 3px dotted #2980b9;
-	border-right: 3px dotted #2980b9;
-	padding: 2%;
-	font-size: 75%;
 }
 .bbcode-side-right {
 	float: right;
 	margin: 1em 0 1em 1em;
 	clear: right;
-	clear: both;
-	width: 21%;
-	border-left: 3px dotted #2980b9;
-	border-right: 3px dotted #2980b9;
-	padding: 2%;
-	font-size: 75%;
 }
 
 @media screen and (max-width: 800px) {

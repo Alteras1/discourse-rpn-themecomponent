@@ -2,7 +2,8 @@
 Image Float...............BBCODE-001
 Border....................BBCODE-002
 Background................BBCODE-003
-Background................BBCODE-004
+Fieldset..................BBCODE-004
+Side......................BBCODE-005
 */
 
 /*************************************************
@@ -63,5 +64,38 @@ Background................BBCODE-004
 @media screen and (max-width: 800px) {
 	.bbcode-fieldset {
 		width: 90%;
+	}
+}
+
+/*************************************************
+*** Side                             BBCODE-005***
+*************************************************/
+
+.bbcode-side {
+	clear: both;
+	width: 21%;
+	border-left: 3px dotted #2980b9;
+	border-right: 3px dotted #2980b9;
+	padding: 2%;
+	font-size: 75%;
+}
+.bbcode-side-left {
+	float: left;
+	margin: 1em 1em 1em 0;
+	clear: left;
+}
+.bbcode-side-right {
+	float: right;
+	margin: 1em 0 1em 1em;
+	clear: right;
+}
+
+@media screen and (max-width: 800px) {
+	.bbcode-side,
+	.bbcode-side-right,
+	.bbcode-side-left {
+		width: 80%;
+		float: none;
+		clear: both;
 	}
 }

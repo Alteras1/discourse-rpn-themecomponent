@@ -1,3 +1,12 @@
+/*
+Image Float...............BBCODE-001
+Border....................BBCODE-002
+Background................BBCODE-002
+*/
+
+/*************************************************
+*** Image Float                      BBCODE-001***
+*************************************************/
 .float-left,
 .float-right {
 	display: block;
@@ -6,3 +15,25 @@
 }
 .float-left  { float: left; margin-left: 0; }
 .float-right { float: right; margin-right: 0; }
+
+
+/*************************************************
+*** Border                           BBCODE-022***
+*************************************************/
+.bbcode-border {
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2980b9;
+}
+	.bbcode-border .bbcode-background {
+		margin: -10px;
+}
+
+/*************************************************
+*** Background                       BBCODE-003***
+*************************************************/
+.bbcode-background {
+	padding: 10px;
+	color: black;
+}

@@ -118,13 +118,8 @@ Rows & Columns  ..........BBCODE-007
 }
 
 .bbcode-horizontal-rule-thick {
+  @extend .bbcode-horizontal-rule
 	border-bottom: 3px solid #2980b9;
-	color: #2980b9;
-	font-size: 75%;
-	width: 100%;
-	display: block;
-	text-align: center;
-	
 }
 
 .bbcode-horizontal-rule-dotted {

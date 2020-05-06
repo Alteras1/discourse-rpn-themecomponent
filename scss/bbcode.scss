@@ -86,13 +86,13 @@ Inline Spoiler............BBCODE-008
 	float: left;
 	margin: 1em 1em 1em 0;
 	clear: left;
-	@extend .bbcode-side
+	@extend .bbcode-side;
 }
 .bbcode-side-right {
 	float: right;
 	margin: 1em 0 1em 1em;
 	clear: right;
-	@extend .bbcode-side
+	@extend .bbcode-side;
 }
 
 @media screen and (max-width: 800px) {

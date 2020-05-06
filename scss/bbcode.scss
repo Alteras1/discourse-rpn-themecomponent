@@ -5,7 +5,8 @@ Background................BBCODE-003
 Fieldset..................BBCODE-004
 Side......................BBCODE-005
 Divider...................BBCODE-006
-Rows & Columns  ..........BBCODE-007
+Rows & Columns............BBCODE-007
+Inline Spoiler............BBCODE-008
 */
 
 /*************************************************
@@ -189,4 +190,15 @@ Rows & Columns  ..........BBCODE-007
 	margin: 0;
 	padding: 0;
 	float: none;
+}
+
+/*************************************************
+*** Inline Spoiler                   BBCODE-008***
+*************************************************/
+.inlineSpoiler {
+	background-color: #2980b9;
+	padding: 0 5px;
+}
+.inlineSpoiler:hover {
+	background: black;
 }

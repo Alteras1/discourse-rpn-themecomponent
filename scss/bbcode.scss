@@ -139,13 +139,13 @@ Inline Spoiler............BBCODE-008
 */
 
 .bbcode-horizontal-rule-dotted {
-  @extend .bbcode-horizontal-rule
+  @extend .bbcode-horizontal-rule;
 	border-bottom: 1px dotted #2980b9;
 }
 
 .bbcode-horizontal-rule-dotted-thick,
 .bbcode-horizontal-rule-thick-dotted {
-  @extend .bbcode-horizontal-rule
+  @extend .bbcode-horizontal-rule;
 	border-bottom: 3px dotted #2980b9;
 }
 

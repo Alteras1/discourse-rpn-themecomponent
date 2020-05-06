@@ -109,16 +109,6 @@ Inline Spoiler............BBCODE-008
 *** Divider                          BBCODE-006***
 *************************************************/
 
-/* .bbcode-horizontal-rule {
-	border-bottom: 1px solid #2980b9;
-	color: #2980b9;
-	font-size: 75%;
-	width: 100%;
-	display: block;
-	text-align: center;
-}
-*/
-
 .bbcode-horizontal-rule {
 	border-bottom: 1px solid #2980b9;
 	color: #2980b9;
@@ -131,12 +121,6 @@ Inline Spoiler............BBCODE-008
     border-bottom: 3px solid #2980b9;
   }
 }
-
-/* .bbcode-horizontal-rule-thick {
-  @extend .bbcode-horizontal-rule
-	border-bottom: 3px solid #2980b9;
-}
-*/
 
 .bbcode-horizontal-rule-dotted {
   @extend .bbcode-horizontal-rule;

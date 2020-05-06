@@ -7,6 +7,7 @@ Side......................BBCODE-005
 Divider...................BBCODE-006
 Rows & Columns............BBCODE-007
 Inline Spoiler............BBCODE-008
+Justify...................BBCODE-009
 */
 
 /*************************************************
@@ -187,4 +188,12 @@ Inline Spoiler............BBCODE-008
 }
 .inlineSpoiler:hover {
 	background: #2980b9;
+}
+
+/*************************************************
+*** Justifiy                         BBCODE-009***
+*************************************************/
+.bbcode-justify {
+	display: block;
+	text-align:justify;
 }

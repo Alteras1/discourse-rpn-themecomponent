@@ -197,3 +197,162 @@ Justify...................BBCODE-009
 	display: block;
 	text-align:justify;
 }
+
+/*************************************************
+*** Print                            BBCODE-010***
+*************************************************/
+
+.bbcode-print {
+	font-family: 'Coming Soon', 'Architects Daughter', cursive;
+	font-size: 16px;
+	width: auto;
+	margin: 0 auto;
+	background: url('/styles/assets/paper.jpg');
+	padding: 15px 25px;
+	line-height: 25px;
+}
+
+.bbcode-print-top-tear,
+.bbcode-print-bottom-tear {
+	height: 65px;
+	clear: both;
+	background-repeat: no-repeat;
+}
+	.bbcode-print-top-tear {
+		background-image: url('/assets/paper-top3.png');
+		margin: -26px -26px 0;
+		background-position: 50% 0;
+	}
+
+	.bbcode-print-bottom-tear {
+		background-image: url('/assets/paper-bottom3.png');
+		margin: 0 -26px -26px;
+		background-position: 50% 100%;
+	}
+
+.bbcode-print-line {
+	background: url('/assets/paperlined.jpg');
+	border-bottom: 0;
+	@extend .bbcode-print;
+	@extend .bbcode-print-top-tear;
+	@extend .bcode-print-bottom-tear;
+}
+
+.bbcode-print-graph {
+	background: url('/assets/papergraph.jpg');
+	border-bottom: 0;
+	@extend .bbcode-print;
+	@extend .bbcode-print-top-tear;
+	@extend .bcode-print-bottom-tear;
+}
+
+.bbcode-print-parchment {
+	background: url('/styles/assets/paperparchment.jpg');
+	@extend .bbcode-print;
+	@extend .bbcode-print-top-tear;
+	@extend .bcode-print-bottom-tear;
+}
+	/*Emoticon Changes*/
+	.bbcode-print img.mceSmilieSprite {
+		margin: 0;
+		position: relative;
+		top: -5px;
+	}
+	/*Header Changes*/
+	.bbcode-print .post-heading,
+	.bbcode-print .post-sub-heading {
+		font-family: 'Architects Daughter', cursive;
+		line-height: 50px;
+		margin-top: 0;
+	}
+
+	/*List Changes*/
+	.bbcode-print ul,
+	.bbcode-print ol {
+		margin: 0;
+		margin-left: 2em;
+	}
+	.bbcode-print ul li {
+		list-style: none;
+		margin-top: 25px;
+	}
+		.bbcode-print ul li:first-child {
+			margin-top: 0;
+		}
+	.bbcode-print ul li:before {
+		content: '\27B1';
+		margin-right: 1em;
+	}
+
+	/*Row and Column Changes*/
+	.bbcode-print .bbcode-column {
+		margin: 0;
+		padding: 0 1%;
+	}
+
+	/*Table Changes*/
+	.bbcode-print td,
+	.bbcode-print th {
+		padding: 0 6px;
+		vertical-align: top;
+		height: 25px;
+	}
+	.bbcode-print table {
+		margin-bottom: 0;
+	}
+
+	/*Progress Changes*/
+
+	.bbcode-print .bbcode-progress-thin .bbcode-progress-bar-other {
+		background: url('/styles/assets/grey-paper-bar.jpg') repeat-x;
+	}
+	.bbcode-print .bbcode-progress-thin .bbcode-progress-bar {
+		background: url('/styles/assets/green-paper-bar.jpg') repeat-x;
+		border-right: 2px solid #F3F5F4;
+	}
+	.bbcode-print .bbcode-progress-thin.bbcode-progress-color .bbcode-progress-bar {
+		background: url('/styles/assets/green-paper-bar.jpg') repeat-x;
+		border-right: 2px solid #F3F5F4;
+	}
+	.bbcode-print .bbcode-progress-thin.bbcode-progress-color .bbcode-progress-bar-other {
+		background: url('/styles/assets/blue-paper-bar.jpg') repeat-x;
+	}
+
+	.bbcode-print-parchment .bbcode-progress-thin  .bbcode-progress-bar,
+	.bbcode-print-parchment .bbcode-progress .bbcode-progress-bar {
+		border-right: 2px solid #afae99;
+	}
+
+	.bbcode-print-parchment .bbcode-progress .bbcode-progress-bar,
+	.bbcode-print-parchment .bbcode-progress-thin .bbcode-progress-bar,
+	.bbcode-print-parchment .bbcode-progress-thin.bbcode-progress-color .bbcode-progress-bar {
+		background: #66d36b;
+		border-right: 2px solid #afae99;
+	}
+
+	.bbcode-print-parchment .bbcode-progress .bbcode-progress-bar-other,
+	.bbcode-print-parchment .bbcode-progress-thin .bbcode-progress-bar-other {
+		background: #2980b9;
+	}
+
+	.bbcode-print-parchment .bbcode-progress.bbcode-progress-color .bbcode-progress-bar-other,
+	.bbcode-print-parchment .bbcode-progress-thin.bbcode-progress-color .bbcode-progress-bar-other {
+		background: #2980b9;
+	}
+
+	.bbcode-print-parchment .bbcode-progress {
+		border: 1px solid #2980b9;
+	}
+
+	/*Note Changes*/
+	.bbcode-print .bbcode-note {
+		line-height: 25px;
+		padding: 25px 10px;
+		background: #FCF0AD;
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
+		box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
+	}
+	.bbcode-print .bbcode-note-footer {
+		display: none;
+	}

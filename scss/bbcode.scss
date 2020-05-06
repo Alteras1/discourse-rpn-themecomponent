@@ -151,48 +151,6 @@ Inline Spoiler............BBCODE-008
 
 
 /*************************************************
-*** Rows & Columns                   BBCODE-007***
-*************************************************/
-
-.bbcode-row {
-	width: 100%;
-	clear: both;
-	overflow: hidden;
-	margin: 0;
-}
-
-.bbcode-row .bbcode-column {
-	margin: 0 0.5%;
-	padding: 0 0.5%;
-	float: left;
-}
-
-.bbcode-row .column-width-span1 	{	width: 10.5%;	} /*12.5*/
-.bbcode-row .column-width-span2 	{	width: 23%;	} /*25*/
-.bbcode-row .column-width-span3 	{	width: 35.5%;	} /*37.5*/
-.bbcode-row .column-width-span4 	{	width: 48%;	} /*50*/
-.bbcode-row .column-width-span5 	{	width: 60.5%;	} /*62.5*/
-.bbcode-row .column-width-span6 	{	width: 73%;	} /*75*/
-.bbcode-row .column-width-span7 	{	width: 85.5%;	} /*87.5*/
-.bbcode-row .column-width-span8 	{	width: 98%;	} /*100*/
-
-@media screen and (max-width: 900px) {
-.bbcode-row .column-width-span1,
-.bbcode-row .column-width-span2,
-.bbcode-row .column-width-span3,
-.bbcode-row .column-width-span4,
-.bbcode-row .column-width-span5,
-.bbcode-row .column-width-span6,
-.bbcode-row .column-width-span7,
-.bbcode-row .column-width-span8 	{	width: 100%;	} /*12.5*/
-
-.bbcode-row .bbcode-column {
-	margin: 0;
-	padding: 0;
-	float: none;
-}
-
-/*************************************************
 *** Inline Spoiler                   BBCODE-008***
 *************************************************/
 .inlineSpoiler {

@@ -108,7 +108,7 @@ Rows & Columns  ..........BBCODE-007
 *** Divider                          BBCODE-006***
 *************************************************/
 
-.bbcode-horizontal-rule {
+/* .bbcode-horizontal-rule {
 	border-bottom: 1px solid #2980b9;
 	color: #2980b9;
 	font-size: 75%;
@@ -116,6 +116,7 @@ Rows & Columns  ..........BBCODE-007
 	display: block;
 	text-align: center;
 }
+*/
 
 .bbcode-horizontal-rule {
 	border-bottom: 1px solid #2980b9;
@@ -130,10 +131,11 @@ Rows & Columns  ..........BBCODE-007
   }
 }
 
-.bbcode-horizontal-rule-thick {
+/* .bbcode-horizontal-rule-thick {
   @extend .bbcode-horizontal-rule
 	border-bottom: 3px solid #2980b9;
 }
+*/
 
 .bbcode-horizontal-rule-dotted {
   @extend .bbcode-horizontal-rule

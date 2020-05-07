@@ -311,7 +311,7 @@ Print.....................BBCODE-010
 .bbcode-email-receive .bbcode-email-first-row:before {
 	content: "From:";
 }
-.bbcode-email-receive .bbcode-email-send .bbcode-email-second-row:before {
+.bbcode-email-second-row:before {
 	content: "Subject:";
 }
 .bbcode-email-person,

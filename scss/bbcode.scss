@@ -302,8 +302,7 @@ Print.....................BBCODE-010
 .bbcode-email .bbcode-email-first-row:before {
 	content: "To:";
 }
-.bbcode-email-send .bbcode-email-first-row:after,
-.bbcode-email .bbcode-email-first-row:after{
+.bbcode-email-send .bbcode-email-receive .bbcode-email-receive .bbcode-email-first-row:after, .bbcode-email-first-row:after{
 	content: "Cc    Bcc";
 	position: absolute;
 	right: 10px;
@@ -311,7 +310,7 @@ Print.....................BBCODE-010
 .bbcode-email-receive .bbcode-email-first-row:before {
 	content: "From:";
 }
-.bbcode-email .bbcode-email-second-row:before {
+.bbcode-email-receive .bbcode-email-send .bbcode.bbcode-email-second-row:before {
 	content: "Subject:";
 }
 .bbcode-email-person,

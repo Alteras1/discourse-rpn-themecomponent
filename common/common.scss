@@ -1,1 +1,256 @@
-@import "bbcode";
+/*
+Image Float...............BBCODE-001
+Border....................BBCODE-002
+Background................BBCODE-003
+Fieldset..................BBCODE-004
+Side......................BBCODE-005
+Divider...................BBCODE-006
+Rows & Columns............BBCODE-007
+Inline Spoiler............BBCODE-008
+Justify...................BBCODE-009
+*/
+
+@import "common/foundation/variables";
+
+/*************************************************
+*** Image Float                      BBCODE-001***
+*************************************************/
+.float-left,
+.float-right {
+	display: block;
+	margin: 10px;
+	max-width: calc(50% - 10px) !important;
+}
+.float-left  { float: left; margin-left: 0; }
+.float-right { float: right; margin-right: 0; }
+
+
+/*************************************************
+*** Border                           BBCODE-002***
+*************************************************/
+.bbcode-border {
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2980b9;
+}
+	.bbcode-border .bbcode-background {
+		margin: -10px;
+}
+
+/*************************************************
+*** Background                       BBCODE-003***
+*************************************************/
+.bbcode-background {
+	padding: 10px;
+	color: black;
+}
+
+/*************************************************
+*** Fieldset                         BBCODE-004***
+*************************************************/
+
+.bbcode-fieldset {
+	width: 95%;
+	margin: 0 auto;
+	clear: both;
+	border: 1px solid #2980b9;
+	padding: 10px;
+}
+.bbcode-fieldset legend {
+	margin-left: 3%;
+	font-weight: 700;
+	color: #2980b9;
+	padding: 0 10px;
+}
+
+.bbcode-fieldset span {
+	color: #2980b9;
+}
+@media screen and (max-width: 800px) {
+	.bbcode-fieldset {
+		width: 90%;
+	}
+}
+
+/*************************************************
+*** Side                             BBCODE-005***
+*************************************************/
+
+.bbcode-side {
+	clear: both;
+	width: 21%;
+	border-left: 3px dotted #2980b9;
+	border-right: 3px dotted #2980b9;
+	padding: 2%;
+	font-size: 75%;
+}
+.bbcode-side-left {
+	float: left;
+	margin: 1em 1em 1em 0;
+	clear: left;
+	@extend .bbcode-side;
+}
+.bbcode-side-right {
+	float: right;
+	margin: 1em 0 1em 1em;
+	clear: right;
+	@extend .bbcode-side;
+}
+
+@media screen and (max-width: 800px) {
+	.bbcode-side,
+	.bbcode-side-right,
+	.bbcode-side-left {
+		width: 80%;
+		float: none;
+		clear: both;
+	}
+}
+
+/*************************************************
+*** Divider                          BBCODE-006***
+*************************************************/
+
+.bbcode-horizontal-rule {
+	border-bottom: 1px solid #2980b9;
+	color: #2980b9;
+	font-size: 75%;
+	width: 100%;
+	display: block;
+	text-align: center;
+  &-thick {
+    @extend .bbcode-horizontal-rule;
+    border-bottom: 3px solid #2980b9;
+  }
+}
+
+.bbcode-horizontal-rule-dotted {
+  @extend .bbcode-horizontal-rule;
+	border-bottom: 1px dotted #2980b9;
+}
+
+.bbcode-horizontal-rule-dotted-thick,
+.bbcode-horizontal-rule-thick-dotted {
+  @extend .bbcode-horizontal-rule;
+	border-bottom: 3px dotted #2980b9;
+}
+
+
+/*************************************************
+*** Rows & Columns                   BBCODE-007***
+*************************************************/
+
+.bbcode-row {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	margin: 0;
+}
+
+.bbcode-row .bbcode-column {
+	margin: 0 0.5%;
+	padding: 0 0.5%;
+	float: left;
+}
+
+.bbcode-row .column-width-span1 	{	width: 10.5%;	} /*12.5*/
+.bbcode-row .column-width-span2 	{	width: 23%;	} /*25*/
+.bbcode-row .column-width-span3 	{	width: 35.5%;	} /*37.5*/
+.bbcode-row .column-width-span4 	{	width: 48%;	} /*50*/
+.bbcode-row .column-width-span5 	{	width: 60.5%;	} /*62.5*/
+.bbcode-row .column-width-span6 	{	width: 73%;	} /*75*/
+.bbcode-row .column-width-span7 	{	width: 85.5%;	} /*87.5*/
+.bbcode-row .column-width-span8 	{	width: 98%;	} /*100*/
+
+@media screen and (max-width: 900px) {
+.bbcode-row .column-width-span1,
+.bbcode-row .column-width-span2,
+.bbcode-row .column-width-span3,
+.bbcode-row .column-width-span4,
+.bbcode-row .column-width-span5,
+.bbcode-row .column-width-span6,
+.bbcode-row .column-width-span7,
+.bbcode-row .column-width-span8 	{	width: 100%;	} /*12.5*/
+
+.bbcode-row .bbcode-column {
+	margin: 0;
+	padding: 0;
+	float: none;
+}
+
+}
+
+/*************************************************
+*** Inline Spoiler                   BBCODE-008***
+*************************************************/
+.inlineSpoiler {
+	background-color: black;
+	padding: 0 5px;
+}
+.inlineSpoiler:hover {
+	background: #2980b9;
+}
+
+/*************************************************
+*** Justifiy                         BBCODE-009***
+*************************************************/
+.bbcode-justify {
+	display: block;
+	text-align:justify;
+}
+
+/*************************************************
+*** Print                            BBCODE-010***
+*************************************************/
+
+ .bbcode-print {
+	font-family: 'Coming Soon', 'Architects Daughter', cursive;
+	font-size: 16px;
+	width: auto;
+	margin: 0 auto;
+	background-image: url("$paper.jpg");
+	padding: 15px 25px;
+	line-height: 25px;
+}
+
+.bbcode-print-top-tear,
+.bbcode-print-bottom-tear {
+	height: 65px;
+	clear: both;
+	background-repeat: no-repeat;
+}
+	.bbcode-print-top-tear {
+		background-image: url("$paper-top3.png");
+		margin: -26px -26px 0;
+		background-position: 50% 0;
+	}
+
+	.bbcode-print-bottom-tear {
+		background-image: url("$paper-bottom3.png");
+		margin: 0 -26px -26px;
+		background-position: 50% 100%;
+	}
+
+.bbcode-print-line {
+	background-image: url("$paperlined.jpg");
+	border-bottom: 0;
+	@extend .bbcode-print;
+	@extend .bbcode-print-top-tear;
+	@extend .bbcode-print-bottom-tear;
+}
+
+.bbcode-print-graph {
+	background-image: url("$papergraph.jpg");
+	border-bottom: 0;
+	@extend .bbcode-print;
+	@extend .bbcode-print-top-tear;
+	@extend .bbcode-print-bottom-tear;
+}
+
+.bbcode-print-parchment {
+	background: url("$paperparchment.jpg");
+	@extend .bbcode-print;
+	@extend .bbcode-print-top-tear;
+	@extend .bbcode-print-bottom-tear;
+}

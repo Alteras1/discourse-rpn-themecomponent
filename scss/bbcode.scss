@@ -196,7 +196,6 @@ Justify...................BBCODE-009
 *** Justifiy                         BBCODE-009***
 *************************************************/
 .bbcode-justify {
-	background-image: url("$papergraph");
 	display: block;
 	text-align:justify;
 }
@@ -210,7 +209,7 @@ Justify...................BBCODE-009
 	font-size: 16px;
 	width: auto;
 	margin: 0 auto;
-	background-image: url("$paper.jpg");
+	background-image: url("$paper");
 	padding: 15px 25px;
 	line-height: 25px;
 }
@@ -222,19 +221,19 @@ Justify...................BBCODE-009
 	background-repeat: no-repeat;
 }
 	.bbcode-print-top-tear {
-		background-image: url("$paper-top3.png");
+		background-image: url("$paper-top3");
 		margin: -26px -26px 0;
 		background-position: 50% 0;
 	}
 
 	.bbcode-print-bottom-tear {
-		background-image: url("$paper-bottom3.png");
+		background-image: url("$paper-bottom3");
 		margin: 0 -26px -26px;
 		background-position: 50% 100%;
 	}
 
 .bbcode-print-line {
-	background-image: url("$paperlined.jpg");
+	background-image: url("$paperlined");
 	border-bottom: 0;
 	@extend .bbcode-print;
 	@extend .bbcode-print-top-tear;
@@ -242,7 +241,7 @@ Justify...................BBCODE-009
 }
 
 .bbcode-print-graph {
-	background-image: url("$papergraph.jpg");
+	background-image: url("$papergraph");
 	border-bottom: 0;
 	@extend .bbcode-print;
 	@extend .bbcode-print-top-tear;
@@ -250,7 +249,7 @@ Justify...................BBCODE-009
 }
 
 .bbcode-print-parchment {
-	background: url("$paperparchment.jpg");
+	background: url("$paperparchment");
 	@extend .bbcode-print;
 	@extend .bbcode-print-top-tear;
 	@extend .bbcode-print-bottom-tear;

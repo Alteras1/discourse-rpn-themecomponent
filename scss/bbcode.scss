@@ -241,7 +241,7 @@ Justify...................BBCODE-009
 }
 
 .bbcode-print-graph {
-	background: url("$papergraph.jpg");
+	background-image: url("$papergraph.jpg");
 	border-bottom: 0;
 	@extend .bbcode-print;
 	@extend .bbcode-print-top-tear;
